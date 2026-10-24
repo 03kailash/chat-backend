@@ -1,0 +1,6 @@
+-- Demo users; replace with users from your own registration/login system.
+INSERT INTO users (id, display_name) VALUES
+  ('11111111-1111-4111-8111-111111111111', 'Alice'),
+  ('22222222-2222-4222-8222-222222222222', 'Bob'),
+  ('33333333-3333-4333-8333-333333333333', 'Charlie')
+ON CONFLICT (id) DO NOTHING;
